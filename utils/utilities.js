@@ -63,17 +63,17 @@ const flashPool = (token) => {
 const getBPS = (amount = 30000) => {
     switch (amount) {
         case 30000:
-            return 1;
+            return 10;
         case 100:
-            return 500;
+            return 10;
         case 1000:
-            return 50;
+            return 10;
         case 2000:
-            return 25;
+            return 10;
         case 5000:
-            return 8;
+            return 10;
         case 10000:
-            return 5;
+            return 10;
         default:
             throw new Error(`getBPS ${amount} not found`);
     }
