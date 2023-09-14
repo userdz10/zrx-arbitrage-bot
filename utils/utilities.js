@@ -25,17 +25,17 @@ const getDecimals = (token) => {
 const toBorrow = (token) => {
     switch (token) {
         case BASE_TOKENS.DAI:
-            return getBigNumber(token, 30000);
+            return getBigNumber(token, 500);
         case BASE_TOKENS.USDC:
-            return getBigNumber(token, 30000);
+            return getBigNumber(token, 500);
         case BASE_TOKENS.USDT:
-            return getBigNumber(token, 30000);
+            return getBigNumber(token, 500);
         case BASE_TOKENS.WMATIC:
-            return getBigNumber(token, 20850);
+            return getBigNumber(token, 500);
         case BASE_TOKENS.WBTC:
-            return getBigNumber(token, 0.75);
+            return getBigNumber(token, 0.01);
         case BASE_TOKENS.WETH:
-            return getBigNumber(token, 11.4);
+            return getBigNumber(token, 0.1);
         default:
             throw new Error(`toBorrow ${token} not found`);
     }
@@ -63,17 +63,17 @@ const flashPool = (token) => {
 const getBPS = (amount = 30000) => {
     switch (amount) {
         case 30000:
-            return 10;
-        case 100:
-            return 10;
+            return 1;
+        case 500:
+            return 1;
         case 1000:
-            return 10;
+            return 1;
         case 2000:
-            return 10;
+            return 1;
         case 5000:
-            return 10;
+            return 1;
         case 10000:
-            return 10;
+            return 1;
         default:
             throw new Error(`getBPS ${amount} not found`);
     }
