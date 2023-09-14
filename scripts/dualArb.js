@@ -124,7 +124,7 @@ const dualArb = async () => {
                 swaps,
                 {
                     gasLimit: 15000000,
-                    gasPrice: ethers.utils.parseUnits("151", "gwei"),
+                    gasPrice: ethers.utils.parseUnits("145", "gwei"),
                 }
             );
 
