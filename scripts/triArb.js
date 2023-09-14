@@ -159,7 +159,7 @@ const triArb = async (contract) => {
                 swaps,
                 {
                     gasLimit: 15000000,
-                    gasPrice: ethers.utils.parseUnits("300", "gwei"),
+                    gasPrice: ethers.utils.parseUnits("151", "gwei"),
                 }
             );
 
